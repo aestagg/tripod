@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>To-Do Done</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	
+	<main>
+
+		<h1>To-Do Done<h1>
+
+		<section class="toDoDone">
+			<h3>CREATE</h3>
+
+			<form id="titleInput">
+				<h4>Name your list</h4>
+				<input type="text" placeholder="e.g. Weekend Honey Do List" name="title" id="title" />
+			</form>
+
+			<form id="listInput">
+				<h4>What do you have to-do?</h4>
+				<input type="text" placeholder="e.g. Feed the dog" name="list" id="list" />
+
+				<h4>Priority</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="Important" />
+						<span class="markImportant"></span>
+						<div>Important</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="medium" />
+						<span class="markMedium"></span>
+						<div>Medium</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="low" />
+						<span class="markLow"></span>
+						<div>Low</div>
+					</label>
+				</div>
+
+				<input type="submit" value="Add Task" />
+			</form>
+		</section>
+		
+
+		<section class="todoList">
+			<h3>Your New List</h3>
+			<div class="title" id="newTitle"></div>
+			<div class="list" id="todoList"></div>
+		</section>
+		
+	</main>
+	
+	<script src="app.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="tripod.css">
+    <title>To-Do Done</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>To-Do Done</h1>
+    </header>
+
+    <main>
+
+        <section class="toDoDone">
+            <h3>CREATE</h3>
+            <form id="title"> 
+                <h4>Name your list</h4>
+                <input type="text" placeholder="e.g. Weekend Honey Do List" name="listTitle" id="listTitle">
+            </form>
+
+            <form id="add">
+                <h4>What do you have to-do?</h4>
+                <input type="text" placeholder="e.g. Feed the dog" name="taskName" id="taskname">
+
+                <h4>Priority</h4>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="priority" id="priorityOne" value="Important" />
+                        <span class="markImportant"></span>
+                        <div>Important</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="priority" id="priorityTwo" value="medium" />
+                        <span class="markMedium"></span>
+                        <div>Medium</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="priority" id="priorityThree" value="low" />
+                        <span class="markLow"></span>
+                        <div>Low</div>
+                    </label>
+                </div>
+
+                <button type="submit" id="buttonTask">Add Task</button>
+            </form>
+        </section>
+
+        <section class="todoList">
+            <h3>Your New List</h3>
+            <div class="title" id="newTitle"></div>
+            <div class="list" id="todoList"></div>
+
+            <ul>
+            </ul>
+            </div>
+
+            <div>
+                <h2 id="h2Title"></h2>
+                <ul id="ul"></ul>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- Using DIV to hold form input. -->
+<!-- <div>
+    <form id="taskForm">
+
+        <label id="title">
+            <input placeholder="Name Your To-Do List">
+        </label>
+
+        <br>
+
+        <label id="taskOne">
+            <input type="text" placeholder="List Item Here" maxlength="50" size="40">
+            <select name="priority" id="priorityOne">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </label>
+
+
+
+        <br>
+
+        <label id="taskTwo">
+            <input type="text" placeholder="List Item Here" maxlength="50" size="40">
+            <select name="priority" id="priorityTwo">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </label>
+
+        <br>
+
+        <label id="taskThree">
+            <input type="text" placeholder="List Item Here" maxlength="50" size="40">
+            <select name="priority" id="priorityThree">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <button type="submit">Create List</button>
+
+    </form>
+
+</div> -->
